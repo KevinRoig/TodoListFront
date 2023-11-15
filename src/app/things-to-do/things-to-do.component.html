@@ -1,0 +1,8 @@
+<H1>Todo list</H1>
+<div *ngFor="let thingToDo of thingsToDo">
+    <h2> {{ thingToDo.name }}</h2>
+    <p>{{ thingToDo.detail }}</p>
+    <p>{{ thingToDo.id }}</p>
+    <button (click)="delete(thingToDo.id)">Delete this task</button>
+</div>
+<app-form (task)="addTask($event)"></app-form>

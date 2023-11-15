@@ -1,0 +1,10 @@
+:host { margin-top: 100rem;}
+form {
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 2px solid #ccc;
+}
+
+div {
+    margin: 1rem 0;
+}

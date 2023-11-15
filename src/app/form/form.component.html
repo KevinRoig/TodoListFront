@@ -1,0 +1,12 @@
+<form #form="ngForm" (ngSubmit)="(onSubmit(form))">
+    <div>
+        <label for="name">Task name</label>
+        <input type="text" name="name" ngModel>
+    </div>
+    <div>
+        <label for="detail">Task detail</label>
+        <input type="text" name="detail" ngModel>
+    </div>
+    <button type="submit" (click)="addTask(form.value)">Submit</button>
+
+</form>
